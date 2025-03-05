@@ -5,7 +5,8 @@
 
     <!-- Content -->
     <div class="content">
-      <img src="~/assets/img/logo.png" alt="Logo" class="logo">
+    <div class="content-main">
+      <img src="/img/logo.png" alt="Logo" class="logo">
       <div class="header">
         <h1>Daftar Produk</h1>
         <router-link to="/alat" class="btn">Tambah Produk</router-link>
@@ -19,6 +20,7 @@
               <th>Kategori</th>
               <th>Nama</th>
               <th>Spesifikasi</th>
+              <th>Kondisi Alat</th>
               <th>Jenis</th>
               <th>Tahun</th>
               <th>Aksi</th>
@@ -30,10 +32,11 @@
               <td>PC</td>
               <td>PC Gigabyte (4)</td>
               <td>Intel i5 12400F / 16GB / GTX 1600 8GB</td>
+              <td>Baik</td>
               <td>Aset</td>
               <td>2024</td>
               <td>
-                <router-link to="/edit/1" class="action-btn">Edit</router-link>
+                <router-link to="" class="action-btn">Edit</router-link>
                 <button class="action-btn delete-btn">Hapus</button>
               </td>
             </tr>
@@ -42,30 +45,42 @@
               <td>Laptop</td>
               <td>Laptop MSI (1)</td>
               <td>i5 11400H / 15inch / 8GB / 512GB SSD / RTX 3050 8GB</td>
+              <td>minus tapi masih bisa digunakan</td>
               <td>Aset</td>
               <td>2024</td>
               <td>
-                <router-link to="/edit/2" class="action-btn">Edit</router-link>
+                <router-link to="" class="action-btn">Edit</router-link>
                 <button class="action-btn delete-btn">Hapus</button>
               </td>
             </tr>
           </tbody>
         </table>
       </div>
+      </div>
     </div>
   </div>
 </template>
 
 <style scoped>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .dashboard {
-  display: flex;
+  height: 100%;
 }
 
 .content {
-  margin-left: 250px;
+  display: flex;
+}
+
+.content-main {
+  margin-left: 250px; /* Memberikan ruang untuk sidebar (menu) */
   padding: 30px;
   width: 100%;
-  min-height: 100vh;
+  height: 98vh;
   background-color: #F4F4F4;
 }
 
@@ -132,7 +147,7 @@ table tr:nth-child(even) {
   border-radius: 4px;
   text-decoration: none;
   cursor: pointer;
-  margin-right: 5px;
+  margin-left: 10px;
 }
 
 .delete-btn {

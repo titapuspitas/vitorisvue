@@ -22,7 +22,7 @@
 }
 
 .sidebar h2 {
-  font-size: 24px;
+  font-size: 32px;
   font-weight: bold;
   margin-bottom: 30px;
   color: #FFD700;

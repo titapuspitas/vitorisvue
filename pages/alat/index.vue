@@ -4,6 +4,8 @@
     <Menu /> 
 
     <div class="content">
+    <div class="content-main">
+      <img src="/img/logo.png" alt="Logo" class="logo">
       <div class="header">
         <h1>Tambah Alat</h1>
       </div>
@@ -32,6 +34,11 @@
           </div>
 
           <div class="form-group">
+            <label for="specification">Kondisi Alat</label>
+            <input type="text" id="specification"  placeholder="Masukkan Spesifikasi Alat" required>
+          </div>
+
+          <div class="form-group">
             <label for="type">Jenis</label>
             <select id="type" required>
               <option value="Aset">Aset</option>
@@ -41,7 +48,7 @@
 
           <div class="form-group">
             <label for="year">Tahun</label>
-            <input type="number" id="year" placeholder="Masukkan Tahun Alat" required>
+            <input type="year" id="year" placeholder="Masukkan Tahun Alat" required>
           </div>
 
           <div class="form-group">
@@ -49,20 +56,33 @@
           </div>
       </div>
     </div>
+    </div>
   </div>
 </template>
 
 <style scoped>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .dashboard {
-  display: flex;
+  height: 100%;
 }
 
 .content {
-  margin-left: 250px; /* Agar tidak tumpang tindih dengan sidebar */
-  padding: 30px;
-  background-color: #F4F4F4;
-  width: 100%;
+  display: flex;
 }
+
+.content-main {
+  margin-left: 250px; /* Memberikan ruang untuk sidebar (menu) */
+  padding: 30px;
+  width: 100%;
+  height: 98vh;
+  background-color: #F4F4F4;
+}
+
 
 .header {
   display: flex;
@@ -93,6 +113,7 @@
 
 .form-group {
   margin-bottom: 20px;
+  margin-right: 20px;
 }
 
 .form-group label {

@@ -4,7 +4,7 @@
 
   <div class="content">
     <div class="content-main">
-      <img src="~/assets/img/logo.png" alt="Logo" class="logo">
+      <img src="/img/logo.png" alt="Logo" class="logo">
       <div class="header">
         <h1>Peminjaman Produk</h1>
         <router-link to="/formpeminjaman" class="btn">Pinjam</router-link>
@@ -19,6 +19,7 @@
               <th>Nama</th>
               <th>Barang</th>
               <th>Tanggal Pinjam</th>
+              <th>Jumlah Yang Dipinjam</th>
               <th>Status</th>
             </tr>
           </thead>
@@ -36,10 +37,6 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  background-color: #F4F4F4;
-}
 .dashboard {
   height: 100%;
 }
@@ -52,6 +49,8 @@ body {
   margin-left: 250px; /* Memberikan ruang untuk sidebar (menu) */
   padding: 30px;
   width: 100%;
+  background-color: #F4F4F4;
+  height: 98vh;
 }
 
 .header {

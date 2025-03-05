@@ -1,11 +1,9 @@
 <template>
   <div class="dashboard">
-    <!-- Sidebar -->
     <Menu />
-
     <!-- Content -->
     <div class="content">
-      <img src="~/assets/img/logo.png" alt="Logo" class="logo">
+      <img src="/img/logo.png" alt="Logo" class="logo">
       <div class="header">
         <h1>Dashboard Inventory</h1>
       </div>
@@ -37,12 +35,6 @@
   box-sizing: border-box;
 }
 
-body, html {
-  height: 100%;
-  font-family: Arial, sans-serif;
-  background-color: #F4F4F4; /* Abu Muda */
-}
-
 /* Layout */
 .dashboard {
   display: flex;
@@ -54,7 +46,7 @@ body, html {
   margin-left: 250px; /* To prevent content overlap with sidebar */
   padding: 30px;
   width: 100%;
-  min-height: 100vh;
+  min-height: 98vh;
   background-color: #F4F4F4; /* Abu Muda */
   overflow: hidden; /* Prevent overflow */
 }
@@ -99,7 +91,7 @@ body, html {
 .stat-card {
   background-color: #005696; /* Biru Tua */
   color: white;
-  padding: 20px;
+  padding: 40px;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
